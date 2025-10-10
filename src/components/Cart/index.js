@@ -15,7 +15,7 @@ const Cart = () => (
       const onClickRemoveAllButton = () => {
         removeAllCartItems()
       }
-
+      console.log(showEmptyView)
       return (
         <>
           <Header />
@@ -28,6 +28,7 @@ const Cart = () => (
                 <button
                   type="button"
                   className="removeall"
+                  data-testid="remove"
                   onClick={onClickRemoveAllButton}
                 >
                   Remove All

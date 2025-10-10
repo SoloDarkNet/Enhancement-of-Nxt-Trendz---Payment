@@ -75,10 +75,6 @@ class ProductItemDetails extends Component {
       this.setState({
         apiStatus: apiStatusConstants.failure,
       })
-    } else {
-      this.setState({
-        apiStatus: apiStatusConstants.failure,
-      })
     }
   }
 
@@ -166,6 +162,7 @@ class ProductItemDetails extends Component {
                   <button
                     type="button"
                     className="quantity-controller-button"
+                    aria-label="Mute volume"
                     onClick={this.onDecrementQuantity}
                     data-testid="minus"
                   >
@@ -175,6 +172,7 @@ class ProductItemDetails extends Component {
                   <button
                     type="button"
                     className="quantity-controller-button"
+                    aria-label="Mute volume"
                     onClick={this.onIncrementQuantity}
                     data-testid="plus"
                   >
@@ -185,6 +183,7 @@ class ProductItemDetails extends Component {
                   type="button"
                   className="button add-to-cart-btn"
                   onClick={onClickAddToCart}
+                  data-testid="plus"
                 >
                   ADD TO CART
                 </button>
@@ -231,5 +230,4 @@ class ProductItemDetails extends Component {
     )
   }
 }
-
 export default ProductItemDetails
