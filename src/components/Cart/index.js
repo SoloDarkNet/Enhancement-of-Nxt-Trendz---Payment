@@ -20,7 +20,7 @@ const Cart = () => (
         <>
           <Header />
           <div className="cart-container">
-            {showEmptyView ? (
+            {cartList.length === 0 ? (
               <EmptyCartView />
             ) : (
               <div className="cart-content-container">
